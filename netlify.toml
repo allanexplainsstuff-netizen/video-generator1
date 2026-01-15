@@ -1,0 +1,11 @@
+[build]
+  functions = "netlify/functions"
+  publish = "."
+
+[build.environment]
+  GEMINI_API_KEY = "AIzaSyDCCbCVPtNHZSrJxGKVRJBpEqogCmxC5hY"
+
+[[redirects]]
+  from = "/api/gemini-vision"
+  to = "/.netlify/functions/gemini-vision"
+  status = 200
